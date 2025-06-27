@@ -1,0 +1,6 @@
+---
+Bug-Database: https://github.com/erikreider/swayaudioidleinhibit
+Cite-As: "Prevents swayidle from sleeping while any application is outputting or receiving audio."
+Repository: https://github.com/erikreider/swayaudioidleinhibit.git
+Repository-Browse: https://github.com/erikreider/swayaudioidleinhibit
+

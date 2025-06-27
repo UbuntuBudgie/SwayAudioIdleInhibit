@@ -1,4 +1,5 @@
-sway-audio-idle-inhibit (0.1.2) stable; urgency=medium
+sway-audio-idle-inhibit (0.1.2-0ubuntu1~ppa) plucky; urgency=medium
 
   * Initial release.
 
+ -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 27 Jun 2025 18:22:10 +0100

@@ -1,0 +1,23 @@
+--- sway-audio-idle-inhibit-0.1.2.orig/meson.build
++++ sway-audio-idle-inhibit-0.1.2/meson.build
+@@ -56,3 +56,7 @@ executable(
+   ],
+   install: true,
+ )
++
++install_data('sway-audio-idle-inhibit.desktop',
++    install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
++)
+--- /dev/null
++++ sway-audio-idle-inhibit-0.1.2/sway-audio-idle-inhibit.desktop
+@@ -0,0 +1,10 @@
++[Desktop Entry]
++Name=Sway Audio Idle Inhibit
++Comment=Pause swayidle on audio
++Icon=
++Exec=sway-audio-idle-inhibit
++Terminal=true
++Type=Application
++Categories=
++NoDisplay=true
++X-GNOME-Autostart-Delay=5

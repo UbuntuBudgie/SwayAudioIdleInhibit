@@ -1,15 +1,26 @@
 Source: sway-audio-idle-inhibit
-Maintainer: https://github.com/Kyuyrii
-Build-Depends: debhelper-compat (= 13),
-               meson,
-               ninja-build,
-               wayland-protocols,
-               pkgconf,
-               libwayland-dev,
-               libpulse-dev
+Section: misc
+Priority: optional
+Maintainer: David Mohammed <fossfreedom@ubuntu.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ libpulse-dev,
+ libwayland-dev,
+ meson,
+ ninja-build,
+ pkgconf,
+ wayland-protocols,
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Vcs-Browser: https://github.com/ubuntubudgie/swayaudioidleinhibit/tree/debian
+Vcs-Git: https://github.com/UbuntuBudgie/swayaudioidleinhibit -b debian
 
 Package: sway-audio-idle-inhibit
-Architecture: amd64
-Description: Prevents swayidle from turning off the screen while any application is transmitting or receiving audio.
- Should work with all Wayland desktops that support the zwp_idle_inhibit_manager_v1 protocol.
-
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Inhibits swayidle when audio is detected
+ Prevents swayidle from turning off the screen while any application is
+ transmitting or receiving audio.
+ .
+ Should work with all Wayland desktops that support the
+ zwp_idle_inhibit_manager_v1 protocol.
