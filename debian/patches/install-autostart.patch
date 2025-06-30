@@ -16,7 +16,7 @@
 +Comment=Pause swayidle on audio
 +Icon=
 +Exec=sway-audio-idle-inhibit
-+Terminal=true
++Terminal=false
 +Type=Application
 +Categories=
 +NoDisplay=true
